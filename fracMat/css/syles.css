@@ -1,0 +1,225 @@
+/*GENERAL*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h2{
+    color: #222;
+}
+h3{
+    color:#222;
+}
+
+
+
+/*HEADER*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  padding: 0 1rem;
+}
+header nav ul li a{
+    color: #222;
+}
+header nav ul li a:hover{
+    color: #e71d36;
+}
+
+
+
+/*MAIN*/
+.heroe {
+  background-image: url(https://via.placeholder.com/100);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 10rem;
+}
+.contenedorHeroe {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contenedorHeroe h2 {
+  font-size: 3rem;
+}
+.contenedorHeroe h3 {
+  margin-bottom: 3rem;
+}
+.botonHeroe {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 20rem;
+}
+.botonHeroe a {
+  background-color: #e71d36;
+  border-radius: 5px;
+  width: 8rem;
+  height: 3rem;
+  text-align: center;
+  padding-top: 0.8rem;
+  font-size: 1rem;
+  margin-right: 1rem;
+  color: white;
+}
+.botonHeroe a:hover{
+    background-color: #222;
+}
+.destacados {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.destacados h2 {
+  font-size: 2rem;
+  padding-bottom: 3rem;
+  text-decoration: underline;
+  text-decoration-color: #e71d36;
+}
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  justify-content: space-around;
+}
+.productos div {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  background-color:#e71d36;
+  /* width: 56%; */
+  margin: 5rem auto;
+}
+.contacto h2 {
+  font-size: 2rem;
+  margin-top: 3rem;
+  color: #222;
+}
+.contacto h3 {
+  font-size: 1.5rem;
+  color: white;
+}
+.contacto form {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.contacto form input {
+  margin: 0.5rem;
+  font-size: 1rem;
+  height: 2.5rem;
+  padding-left: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+.contacto form textarea {
+  resize: none;
+  margin: 0.5rem;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+  height: 10rem;
+  border: none;
+  border-radius: 5px;
+}
+button {
+  width: 8rem;
+  height: 3rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin: 0.5rem;
+  color:white;
+  background-color: #222;
+  border: none;
+}
+button:hover{
+    background-color: #353535;
+}
+
+
+
+/*FOOTER*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222;
+  height: 15rem;
+}
+.contenedorFooter {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contenedorFooter div{
+    margin-top: 3rem;
+    height: 10rem;
+    width: 15rem;
+}
+.contenedorFooter div h4 {
+  color: white;
+  margin-bottom: 1rem;
+}
+.contenedorFooter div h4::before{
+    content: "|";
+    margin-right: 0.5rem;
+    color: #e71d36;
+}
+.contenedorFooter div a{
+    color: white;
+}
+.contenedorFooter div p {
+  color: #4a4a4a;
+}
+.contenedorFooter nav ul li{
+    padding: 0.2rem;
+}
+.contenedorFooter nav ul li a:hover{
+    color: #e71d36;
+}
+.credito{
+    background-color: #353535;
+    width: 100%;
+}
+.credito p{
+    text-align: center;
+    padding: 0.4rem;
+    color: white;
+    bottom: 0px;
+}
