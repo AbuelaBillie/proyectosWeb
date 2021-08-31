@@ -12,11 +12,13 @@ ul {
 a {
   text-decoration: none;
 }
-h2{
-    color: #222;
+h2 {
+  font-size: 2rem;
+  margin-top: 3rem;
+  color: #222;
 }
-h3{
-    color:#222;
+h3 {
+  color: #222;
 }
 
 
@@ -38,14 +40,12 @@ header nav ul {
 header nav ul li {
   padding: 0 1rem;
 }
-header nav ul li a{
-    color: #222;
+header nav ul li a {
+  color: #222;
 }
-header nav ul li a:hover{
-    color: #e71d36;
+header nav ul li a:hover {
+  color: #e71d36;
 }
-
-
 
 /*MAIN*/
 .heroe {
@@ -87,20 +87,14 @@ header nav ul li a:hover{
   margin-right: 1rem;
   color: white;
 }
-.botonHeroe a:hover{
-    background-color: #222;
+.botonHeroe a:hover {
+  background-color: #222;
 }
 .destacados {
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.destacados h2 {
-  font-size: 2rem;
-  padding-bottom: 3rem;
-  text-decoration: underline;
-  text-decoration-color: #e71d36;
 }
 .productos {
   display: flex;
@@ -117,15 +111,8 @@ header nav ul li a:hover{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5rem;
-  background-color:#e71d36;
-  /* width: 56%; */
-  margin: 5rem auto;
-}
-.contacto h2 {
-  font-size: 2rem;
-  margin-top: 3rem;
-  color: #222;
+  background-color: #e71d36;
+  margin: 5rem auto 4rem auto;
 }
 .contacto h3 {
   font-size: 1.5rem;
@@ -133,7 +120,7 @@ header nav ul li a:hover{
 }
 .contacto form {
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   width: 40%;
@@ -162,15 +149,52 @@ button {
   font-size: 1rem;
   border-radius: 5px;
   margin: 0.5rem;
-  color:white;
+  color: white;
   background-color: #222;
   border: none;
 }
-button:hover{
-    background-color: #353535;
+button:hover {
+  background-color: #353535;
 }
-
-
+.datos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 60%;
+  flex-wrap: wrap;
+}
+.info div {
+  height: 10rem;
+  width: 20rem;
+  margin:1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.info div i {
+  font-size: 3rem;
+  color: #e71d36;
+}
+.info div h4 {
+  margin-bottom: 1rem;
+  color: #e71d36;
+}
+.divisor{
+  background-color: #e71d36;
+  width: 15rem;
+  height: 0.1rem;
+  margin-top:1rem;
+  margin-bottom: 2rem;
+}
 
 /*FOOTER*/
 footer {
@@ -187,39 +211,39 @@ footer {
   justify-content: space-around;
   align-items: center;
 }
-.contenedorFooter div{
-    margin-top: 3rem;
-    height: 10rem;
-    width: 15rem;
+.contenedorFooter div {
+  margin-top: 3rem;
+  height: 10rem;
+  width: 15rem;
 }
 .contenedorFooter div h4 {
   color: white;
   margin-bottom: 1rem;
 }
-.contenedorFooter div h4::before{
-    content: "|";
-    margin-right: 0.5rem;
-    color: #e71d36;
+.contenedorFooter div h4::before {
+  content: "|";
+  margin-right: 0.5rem;
+  color: #e71d36;
 }
-.contenedorFooter div a{
-    color: white;
+.contenedorFooter div a {
+  color: white;
 }
 .contenedorFooter div p {
   color: #4a4a4a;
 }
-.contenedorFooter nav ul li{
-    padding: 0.2rem;
+.contenedorFooter nav ul li {
+  padding: 0.2rem;
 }
-.contenedorFooter nav ul li a:hover{
-    color: #e71d36;
+.contenedorFooter nav ul li a:hover {
+  color: #e71d36;
 }
-.credito{
-    background-color: #353535;
-    width: 100%;
+.credito {
+  background-color: #353535;
+  width: 100%;
 }
-.credito p{
-    text-align: center;
-    padding: 0.4rem;
-    color: white;
-    bottom: 0px;
+.credito p {
+  text-align: center;
+  padding: 0.4rem;
+  color: white;
+  bottom: 0px;
 }
