@@ -16,9 +16,9 @@
         <nav>
             <ul>
                 <li><a href="/index.html">Inicio</a></li>
-                <li><a href="proyectosWeb/fracMat/contacto.html">Nosotros</a></li>
-                <li><a href="">Productos</a></li>
-                <li><a href="#presupuesto">Presupuestos</a></li>
+                <li><a href="/contacto.html">Nosotros</a></li>
+                <li><a href="/productos.html">Productos</a></li>
+                <li><a href="/index.html#presupuesto">Presupuestos</a></li>
             </ul>
         </nav>
     </header>
@@ -30,43 +30,37 @@
                 </h3>
                 <div class="botonHeroe">
                     <a href="/contacto.html">Contactanos!</a>
-                    <a href="">Productos</a>
+                    <a href="/productos.html">Productos</a>
                 </div>
             </div>
         </section>
         <section class="destacados">
             <h2>Categorías</h2>
             <div class="divisor"></div>
-            <div class="productos">
-                <div class="producto">
-                    <img src="https://via.placeholder.com/300" alt="producto1">
-                    <a href="">Producto</a>
-                    <p>precio</p>
+            <div class="categorias">
+                <div>
+                    <img src="/img/catCemento.jpg" alt="categoría cementos">
+                    <a href="/productos.html#cementos">Cementos</a>
                 </div>
-                <div class="producto">
-                    <img src="https://via.placeholder.com/300" alt="producto1">
-                    <a href="">Producto</a>
-                    <p>precio</p>
+                <div>
+                    <img src="/img/catYeso.jpg" alt="categoría yesos">
+                    <a href="/productos.html#yesos">Yesos</a>
                 </div>
-                <div class="producto">
-                    <img src="https://via.placeholder.com/300" alt="producto1">
-                    <a href="">Producto</a>
-                    <p>precio</p>
+                <div>
+                    <img src="/img/catAdhesivo.jpg" alt="categoría adhesivos">
+                    <a href="/productos.html#adhesivos">Adhesivos cerámicos</a>
                 </div>
-                <div class="producto">
-                    <img src="https://via.placeholder.com/300" alt="producto1">
-                    <a href="">Producto</a>
-                    <p>precio</p>
+                <div>
+                    <img src="/img/catRevoque.jpg" alt="categoría revoques">
+                    <a href="/productos.html#revoques">Revoques</a>
                 </div>
-                <div class="producto">
-                    <img src="https://via.placeholder.com/300" alt="producto1">
-                    <a href="">Producto</a>
-                    <p>precio</p>
+                <div>
+                    <img src="/img/catCal.jpg" alt="categoría cal">
+                    <a href="/productos.html#cal">Cal</a>
                 </div>
-                <div class="producto">
-                    <img src="https://via.placeholder.com/300" alt="producto1">
-                    <a href="">Producto</a>
-                    <p>precio</p>
+                <div>
+                    <img src="/img/catArena.jpg" alt="categoría arena">
+                    <a href="/productos.html#arena">Arena</a>
                 </div>
             </div>
         </section>
@@ -74,12 +68,12 @@
             <a id="presupuesto"></a>
             <h2>¿Necesitas cotización?</h2>
             <h3>Contactanos</h3>
-            <form action="">
-                <input type="text" placeholder="Nombre y apellido">
-                <input type="email" placeholder="Correo electrónico">
-                <input type="tel" placeholder="Teléfono">
-                <textarea placeholder="Mensaje"></textarea>
-             <button class="submit">Enviar</button>
+            <form action="mails.php" method="POST">
+                <input name="nombreApellido" type="text" placeholder="Nombre y apellido">
+                <input name="mail" type="email" placeholder="Correo electrónico">
+                <input name="telefono" type="tel" placeholder="Teléfono">
+                <textarea name="mensaje" placeholder="Mensaje"></textarea>
+             <button name="enviar" class="submit">Enviar</button>
             </form>
         </section>
     </main>
@@ -91,8 +85,8 @@
                     <ul>
                         <li><a href="index.html">Inicio</a></li>
                         <li><a href="/contacto.html">Nosotros</a></li>
-                        <li><a href="">Productos</a></li>
-                        <li><a href="#presupuesto">Presupuestos</a></li>
+                        <li><a href="/productos.html">Productos</a></li>
+                        <li><a href="/index.html#presupuesto">Presupuestos</a></li>
                     </ul>
                 </nav>
             </div>
