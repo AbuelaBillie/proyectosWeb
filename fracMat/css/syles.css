@@ -1,5 +1,6 @@
 /*GENERAL*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -21,8 +22,6 @@ h3 {
   color: #222;
 }
 
-
-
 /*HEADER*/
 header {
   display: flex;
@@ -32,7 +31,22 @@ header {
 }
 .logo {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+}
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+.logo h1 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 3.5rem;
+  color: #e71d36;
+  margin-left: 0.5rem;
+}
+.logo span {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #222;
+  margin-left: 0.2rem;
 }
 header nav ul {
   display: flex;
@@ -48,8 +62,28 @@ header nav ul li a:hover {
 }
 
 /*MAIN*/
-.heroe {
-  background-image: url(https://via.placeholder.com/100);
+.heroeIni{
+  background-image: url("/img/heroInicio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 10rem;
+}
+.heroeNos{
+  background-image: url("/img/heroNosotros.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 10rem;
+}
+.heroeProd{
+  background-image: url("/img/heroProductos.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 30rem;
@@ -108,17 +142,17 @@ header nav ul li a:hover {
   flex-direction: column;
   align-items: center;
 }
-.categorias div a{
+.categorias div a {
   color: #222;
   font-size: 1.3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.categorias div{
-  cursor:pointer;
+.categorias div {
+  cursor: pointer;
 }
-.categorias div img:hover{
+.categorias div img:hover {
   filter: brightness(70%);
 }
 .contacto {
@@ -187,7 +221,7 @@ button:hover {
 .info div {
   height: 10rem;
   width: 20rem;
-  margin:1rem;
+  margin: 1rem;
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
@@ -202,33 +236,31 @@ button:hover {
   margin-bottom: 1rem;
   color: #e71d36;
 }
-.divisor{
+.divisor {
   background-color: #e71d36;
   width: 15rem;
   height: 0.1rem;
-  margin-top:1rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
 }
-.contenedorProductos{
+.contenedorProductos {
   width: 60%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.prod{
+.prod {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.prod div{
+.prod div {
   margin: 1rem 1rem 3rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-
 
 /*FOOTER*/
 footer {
@@ -274,10 +306,16 @@ footer {
 .credito {
   background-color: #353535;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  height: 3rem;
 }
 .credito p {
-  text-align: center;
-  padding: 0.4rem;
   color: white;
-  bottom: 0px;
+  margin-right: 0.3rem;
+}
+.credito a {
+  color: white;
 }
