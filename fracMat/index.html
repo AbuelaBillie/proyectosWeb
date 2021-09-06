@@ -1,112 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/syles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/syles.css" />
     <title>Frac Mat</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <img src="https://via.placeholder.com/100" alt="logo de Frac Mat">
-            <h1>Frac Mat</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/contacto.html">Nosotros</a></li>
-                <li><a href="/productos.html">Productos</a></li>
-                <li><a href="/index.html#presupuesto">Presupuestos</a></li>
-            </ul>
-        </nav>
+      <div class="logo">
+        <img src="https://via.placeholder.com/100" alt="logo de Frac Mat" />
+        <h1>Frac Mat</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./contacto.html">Nosotros</a></li>
+          <li><a href="./productos.html">Productos</a></li>
+          <li><a href="./index.html#presupuesto">Presupuestos</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section class="heroe">
-            <div class="contenedorHeroe">
-                <h2>Bienvenido a Frac Mat</h2>
-                <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est praesentium amet iusto molestias
-                </h3>
-                <div class="botonHeroe">
-                    <a href="/contacto.html">Contactanos!</a>
-                    <a href="/productos.html">Productos</a>
-                </div>
-            </div>
-        </section>
-        <section class="destacados">
-            <h2>Categorías</h2>
-            <div class="divisor"></div>
-            <div class="categorias">
-                <div>
-                    <img src="../img/catCemento.jpg" alt="categoría cementos">
-                    <a href="/productos.html#cementos">Cementos</a>
-                </div>
-                <div>
-                    <img src="/img/catYeso.jpg" alt="categoría yesos">
-                    <a href="/productos.html#yesos">Yesos</a>
-                </div>
-                <div>
-                    <img src="/img/catAdhesivo.jpg" alt="categoría adhesivos">
-                    <a href="/productos.html#adhesivos">Adhesivos cerámicos</a>
-                </div>
-                <div>
-                    <img src="/img/catRevoque.jpg" alt="categoría revoques">
-                    <a href="/productos.html#revoques">Revoques</a>
-                </div>
-                <div>
-                    <img src="/img/catCal.jpg" alt="categoría cal">
-                    <a href="/productos.html#cal">Cal</a>
-                </div>
-                <div>
-                    <img src="/img/catArena.jpg" alt="categoría arena">
-                    <a href="/productos.html#arena">Arena</a>
-                </div>
-            </div>
-        </section>
-        <section class="contacto">
-            <a id="presupuesto"></a>
-            <h2>¿Necesitas cotización?</h2>
-            <h3>Contactanos</h3>
-            <form action="mails.php" method="POST">
-                <input name="nombreApellido" type="text" placeholder="Nombre y apellido">
-                <input name="mail" type="email" placeholder="Correo electrónico">
-                <input name="telefono" type="tel" placeholder="Teléfono">
-                <textarea name="mensaje" placeholder="Mensaje"></textarea>
-             <button name="enviar" class="submit">Enviar</button>
-            </form>
-        </section>
+      <section class="heroe">
+        <div class="contenedorHeroe">
+          <h2>Bienvenido a Frac Mat</h2>
+          <h3>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est
+            praesentium amet iusto molestias
+          </h3>
+          <div class="botonHeroe">
+            <a href="./contacto.html">Contactanos!</a>
+            <a href="./productos.html">Productos</a>
+          </div>
+        </div>
+      </section>
+      <section class="destacados">
+        <h2>Categorías</h2>
+        <div class="divisor"></div>
+        <div class="categorias">
+          <div>
+            <a href="./productos.html#cementos">
+              <img src="./img/catCemento.jpg" alt="categoría cementos" />
+              Cementos</a
+            >
+          </div>
+          <div>
+            <a href="./productos.html#yesos"
+              ><img src="./img/catYeso.jpg" alt="categoría yesos" />Yesos</a
+            >
+          </div>
+          <div>
+            <a href="./productos.html#adhesivos"
+              ><img
+                src="./img/catAdhesivo.jpg"
+                alt="categoría adhesivos"
+              />Adhesivos cerámicos</a
+            >
+          </div>
+          <div>
+            <a href="./productos.html#revoques"
+              ><img
+                src="./img/catRevoque.jpg"
+                alt="categoría revoques"
+              />Revoques</a
+            >
+          </div>
+          <div>
+            <a href="./productos.html#cal"
+              ><img src="./img/catCal.jpg" alt="categoría cal" />Cal</a
+            >
+          </div>
+          <div>
+            <a href="./productos.html#arena"
+              ><img src="./img/catArena.jpg" alt="categoría arena" />Arena</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="contacto">
+        <a id="presupuesto"></a>
+        <h2>¿Necesitas cotización?</h2>
+        <h3>Contactanos</h3>
+        <form action="mails.php" method="POST">
+          <input
+            name="nombreApellido"
+            type="text"
+            placeholder="Nombre y apellido"
+            required="required"
+          />
+          <input name="mail" type="email" required="required" placeholder="Correo electrónico" />
+          <input name="telefono" type="tel" placeholder="Teléfono" />
+          <textarea name="mensaje" required="required" placeholder="Mensaje"></textarea>
+          <button name="enviar" type="submit" class="submit">Enviar</button>
+        </form>
+      </section>
     </main>
     <footer>
-        <div class="contenedorFooter">
-            <div> 
-                <h4>MENU</h4>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="/contacto.html">Nosotros</a></li>
-                        <li><a href="/productos.html">Productos</a></li>
-                        <li><a href="/index.html#presupuesto">Presupuestos</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div>
-                <h4>DIRECCIÓN</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                </p>
-            </div>
-            <div>
-                <h4>TELÉFONO</h4>
-                <p>1234567898</p>
-            </div>
-            <div>
-                <h4>CORREO</h4>
-                <p>probando@gmail.com</p>
-            </div>
+      <div class="contenedorFooter">
+        <div>
+          <h4>MENU</h4>
+          <nav>
+            <ul>
+              <li><a href="./index.html">Inicio</a></li>
+              <li><a href="./contacto.html">Nosotros</a></li>
+              <li><a href="./productos.html">Productos</a></li>
+              <li><a href="./index.html#presupuesto">Presupuestos</a></li>
+            </ul>
+          </nav>
         </div>
-        <div class="credito">
-            <p>ncguede@gmail.com</p>
+        <div>
+          <h4>DIRECCIÓN</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </div>
+        <div>
+          <h4>TELÉFONO</h4>
+          <p>1234567898</p>
+        </div>
+        <div>
+          <h4>CORREO</h4>
+          <p>probando@gmail.com</p>
+        </div>
+      </div>
+      <div class="credito">
+        <p>ncguede@gmail.com</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
