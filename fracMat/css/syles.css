@@ -63,7 +63,7 @@ header nav ul li a:hover {
 
 /*MAIN*/
 .heroeIni{
-  background-image: url("/img/heroInicio.jpg");
+  background-image: url("../img/heroInicio.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 30rem;
@@ -73,7 +73,7 @@ header nav ul li a:hover {
   padding-left: 10rem;
 }
 .heroeNos{
-  background-image: url("/img/heroNosotros.jpg");
+  background-image: url("../img/heroNosotros.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 30rem;
@@ -83,7 +83,7 @@ header nav ul li a:hover {
   padding-left: 10rem;
 }
 .heroeProd{
-  background-image: url("/img/heroProductos.jpg");
+  background-image: url("../img/heroProductos.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 30rem;
