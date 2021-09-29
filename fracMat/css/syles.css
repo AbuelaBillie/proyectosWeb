@@ -66,14 +66,14 @@ header nav ul li a {
 header nav ul li a:hover {
   color: #e71d36;
 }
-#check{
+#check {
   display: none;
 }
-.hamburguesa{
+.hamburguesa {
   display: none;
 }
 /*MAIN*/
-.heroeIni{
+.heroeIni {
   background-image: url("../img/heroInicio.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -83,7 +83,7 @@ header nav ul li a:hover {
   align-items: center;
   padding-left: 10rem;
 }
-.heroeNos{
+.heroeNos {
   background-image: url("../img/heroNosotros.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -93,7 +93,7 @@ header nav ul li a:hover {
   align-items: center;
   padding-left: 10rem;
 }
-.heroeProd{
+.heroeProd {
   background-image: url("../img/heroProductos.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -241,7 +241,7 @@ button:hover {
   font-size: 3rem;
   color: #e71d36;
 }
-.info div p{
+.info div p {
   text-align: center;
 }
 .info div h4 {
@@ -331,8 +331,8 @@ footer {
 .credito a {
   color: white;
 }
-@media screen and (max-width: 1200px){
-  .hamburguesa{
+@media screen and (max-width: 1200px) {
+  .hamburguesa {
     display: block;
     font-size: 2rem;
     color: #222;
@@ -340,23 +340,23 @@ footer {
     cursor: pointer;
     padding: 0 3rem;
   }
-  header nav{
+  header nav {
     position: fixed;
     width: 100%;
     height: 0vh;
     top: 100px;
     background: rgba(0, 0, 0, 0.95);
     text-align: center;
-    transition: all .5s;
+    transition: all 0.5s;
   }
-  header nav ul{
+  header nav ul {
     display: none;
   }
   header nav ul li {
     display: none;
     line-height: 30px;
     margin: 3rem 0;
-    transition: all .5s;
+    transition: all 0.5s;
   }
   header nav ul li a {
     color: #fff;
@@ -364,19 +364,20 @@ footer {
     text-transform: uppercase;
     font-weight: 600;
   }
-  header nav ul li a.active,header nav ul li a:hover {
+  header nav ul li a.active,
+  header nav ul li a:hover {
     color: #e71d36;
-  } 
-  #check{
+  }
+  #check {
     display: none;
   }
-  #check:checked ~ nav{
+  #check:checked ~ nav {
     height: 100%;
   }
-  #check:checked ~ nav ul{
+  #check:checked ~ nav ul {
     display: block;
   }
-  #check:checked ~ nav ul li{
+  #check:checked ~ nav ul li {
     display: block;
   }
   .categorias {
@@ -385,20 +386,20 @@ footer {
   .contacto form {
     width: 80%;
   }
-  .heroeIni{
+  .heroeIni {
     padding-left: 5rem;
   }
-  .heroeNos{
+  .heroeNos {
     padding-left: 5rem;
   }
-  .heroeProd{
+  .heroeProd {
     padding-left: 5rem;
   }
-  .info div{
+  .info div {
     width: 10rem;
   }
   .prod div {
-    margin:2rem;
+    margin: 2rem;
     width: 10rem;
   }
   .contenedorFooter {
@@ -408,34 +409,34 @@ footer {
     margin-top: 3rem;
     width: 15rem;
   }
-} 
-@media screen and (max-width: 480px){
+}
+@media screen and (max-width: 480px) {
   .logo h1 {
-      font-size: 2.5rem;
+    font-size: 2.5rem;
   }
-  .logo{
+  .logo {
     padding-left: 1rem;
   }
   .logo img {
     width: 50px;
     height: 50px;
   }
-  header nav{
+  header nav {
     top: 50px;
-  } 
-  label{
-    width:0px;
   }
-  .heroeIni{
+  label {
+    width: 0px;
+  }
+  .heroeIni {
     align-items: flex-start;
     padding-top: 2rem;
     padding-left: 2rem;
     height: 25rem;
   }
-  .heroeNos{
+  .heroeNos {
     padding-left: 4rem;
   }
-  .heroeProd{
+  .heroeProd {
     padding-left: 3rem;
   }
   .botonHeroe {
@@ -449,9 +450,9 @@ footer {
   .contenedorFooter div {
     height: 5rem;
   }
-  .contenedorFooter div:first-child{
+  .contenedorFooter div:first-child {
     margin-bottom: 3rem;
-  } 
+  }
   .credito {
     font-size: 0.5rem;
   }
