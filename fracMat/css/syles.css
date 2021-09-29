@@ -27,6 +27,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  box-shadow: 2px 3px 30px #555;
+  z-index: 999;
 }
 .logo {
   padding: 0 3rem;
