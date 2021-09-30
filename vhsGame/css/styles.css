@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*GENERAL*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/*END GENERAL*/
+
+/*-----------------------------------------------*/
+
+/*HEADER*/
+header{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.logo-img{
+    padding: 0.5rem;
+    height: 80px;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li{
+    padding: 1rem;
+}
+/*END HEADER*/
+
+/*-----------------------------------------------*/
+
+/*MAIN*/
+.teens-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.monsters-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.char-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: auto;
+}
+.char-container a{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.char-container img{
+    width: 15rem;
+    height: 23rem;
+}
+.char-container div{
+    background-image: url("/img/fondoPrueba.jpg");
+    border-color: blueviolet;
+    width: 15rem;
+    height: 23rem;
+    margin-bottom: 2rem;
+}
+.char-container img:hover{
+    position: relative;
+    top:-2rem;
+    width: 17rem;
+    height: 25rem;
+}
+

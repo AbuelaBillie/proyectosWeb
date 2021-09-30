@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*GENERAL*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+/*FIN GENERAL*/
+
+/*HEADER*/
+.logos{
+    width: 100%;
+    height: 6.5rem;
+    background-image: url(/img/fondoGalaxiaHeader.png);
+    background-color: #8125b3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logos a{
+    width: 40%;
+}
+.logos img{
+    width: 100%;
+}
+.navBar{
+    background-color: #999;
+    display: block;
+    padding: 0.7rem 1.3rem;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.navMenu{
+    background-color: #555;
+    width: 100%;
+    margin-left: -100%;
+    transition: all 0.5;
+    position: absolute;
+}
+.navMenu li a{
+    display: block;
+    padding: 1rem;
+    color: white;
+}
+.navSubMenu li a{
+    display: block;
+    padding: 1rem 2.3rem;
+    color: white;
+    background-color: #333;
+}
+.navSubMenu{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.mostrar{
+    margin-left: 0;
+}
+/*FIN HEADER*/
+
+/*MAIN*/
+.presentacion, .organizacion{
+    margin-top: 1.3rem;
+    text-align: justify;
+    padding: 1.3rem;
+}
+.presentacion h1{
+    color:#8125b3;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.presentacion p, .organizacion p{
+    margin: 1rem auto;
+}
+.organizacion h2{
+    color:#8125b3;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+/*FIN MAIN*/
+
+/*FOOTER*/
+footer div{
+    background-color:#888;
+    color: white;
+    text-align: center;
+}
+/*FIN FOOTER*/
+
+/*RESPONSIVE PC*/
+@media screen and (min-width:768px){
+    .logos{
+        height: auto;
+        justify-content: center;
+    }
+    .logos a{
+        width:auto;
+        margin:1rem 3rem;
+    }
+    .navBar{
+        display: none;
+    }
+    .navMenu{
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navMenu li a:hover{
+        background-color: #333;
+    }
+    .btnSubMenu{
+        position: relative;
+    }
+    .navSubMenu{
+        position: absolute;
+        overflow: visible;
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .navSubMenu li a:hover{
+        background-color: #555;
+    }
+    .btnSubMenu:hover .navSubMenu{
+        opacity: 1;
+        visibility: visible;
+    }
+
+}
+/*FIN RESPONSIVE PC*/
