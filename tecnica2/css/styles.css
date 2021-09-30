@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*GENERAL*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+/*END GENERAL*/
+
+/*HEADER*/
+header{
+    background-color: #00b1c7;
+}
+.navBar{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.navBar img{
+    width: 100px;
+}
+.navBar ul{
+    display: flex;
+}
+.navBar ul li{
+    padding: 1rem;
+}
+.navBar ul li a{
+    color: #222;
+}
+.navBar ul li a:hover{
+    color: white;
+}
+/*END HEADER*/
+
+/*MAIN*/
+.heroIni{
+    background-image: url("https://via.placeholder.com/150");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 10rem;
+  }
+.us{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.news{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.newsContainer{
+    display: flex;
+}
+/*END MAIN*/
+
+/*FOOTER*/
+/*END FOOTER*/
