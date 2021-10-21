@@ -2,15 +2,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:lightblue;
-    margin: 5rem auto 4rem auto;
+    background-color:#B096CD;
+    margin: 5rem auto 0 auto;
     padding-top: 2.3rem;
   }
   .contacto h3{
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .contacto h4 {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     color: white;
   }
   .contacto form {
@@ -27,6 +27,7 @@
     padding-left: 0.5rem;
     border: none;
     border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
   }
   .contacto form textarea {
     resize: none;
@@ -37,11 +38,12 @@
     height: 10rem;
     border: none;
     border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
   }
   button {
     width: 8rem;
     height: 3rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     border-radius: 5px;
     margin: 0.5rem;
     color: white;

@@ -1,6 +1,9 @@
 .servicios{
     margin: 3rem auto;
 }
+.servicios h2{
+    font-size: 2rem;
+}
 .contenedorServicios{
     width: 70%;
     margin: 0 auto;
@@ -17,9 +20,17 @@
 .servicio img{
     width: 50%;
 }
+.nombreServicio{
+    font-size: 1.5rem;
+}
 .comentarioServicio{
     position: absolute;
     visibility: hidden;
+}
+.comentarioServicio p{
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    margin-top: 1rem;
 }
 .servicio:hover .comentarioServicio{
     position: relative;

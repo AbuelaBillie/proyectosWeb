@@ -1,0 +1,47 @@
+/*FOOTER*/
+.redes{
+    height: 13rem;
+    background-color: #E3CBBB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+.redes ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.redes ul li{
+    font-size: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    padding: 0.6rem;
+    border-radius: 100px;
+    background-color: #222;
+    margin: 0.3rem;
+}
+.redes ul li a{
+    color: white;
+}
+.redes p{
+    font-size: 1.8rem;
+}
+.credito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+}
+.credito p{
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 1rem;
+    color: white;
+}
+.credito a{
+    color: white;
+}
+/*FIN FOOTER*/

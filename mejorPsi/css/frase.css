@@ -1,5 +1,5 @@
 .frase{
-    background-color: lightseagreen;
+    background-color: #A9CDDF;
     height: 20rem;
     display: flex;
     align-items: center;
@@ -12,13 +12,15 @@
     color: white;
 }
 .frase p{
-    font-size: 1rem;
+    font-size: 0.9rem;
     color:white;
     font-style: italic;
+    font-family: 'Inter', sans-serif;
 }
 .frase h3{
     color: black;
-    background-color: violet;
+    background-color: #B096CD;
     padding: 1rem;
     border-radius: 1rem;
+    font-size: 1.3rem;
 }

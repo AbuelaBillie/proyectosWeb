@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 /*GENERAL*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Amatic SC', cursive;
   }
   ul {
     list-style: none;
@@ -15,24 +17,8 @@
 /*FIN GENERAL*/
 
 /*HEADER*/
-.logos{
-    width: 100%;
-    height: 6.5rem;
-    background-image: url('../img/fondoGalaxiaHeader.png');
-    background-color: #8125b3;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.logos a{
-    width: 40%;
-    color: white;
-}
-.logos img{
-    width: 40%;
-}
 .navBar{
-    background-color:palevioletred;
+    background-color:#B096CD;
     display: block;
     padding: 0.7rem 1.3rem;
     color: white;
@@ -50,6 +36,7 @@
     display: block;
     padding: 1rem;
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
 .navSubMenu li a{
     display: block;
@@ -68,55 +55,24 @@
 /*FIN HEADER*/
 
 /*MAIN*/
-.presentacion, .organizacion{
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+/*----presentación----*/
+.presentacion{
     margin-top: 1.3rem;
     text-align: justify;
     padding: 1.3rem;
 }
 .presentacion h1{
-    color:#8125b3;
     text-align: center;
-    margin-bottom: 1.5rem;
+    font-size: 3rem;
 }
-.presentacion p, .organizacion p{
-    margin: 1rem auto;
-}
-.organizacion h2{
-    color:#8125b3;
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
-/*----bibliografia----*/
-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.libro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 15rem;
-    height: 15rem;
-    margin: 1rem;
-    padding: 1rem;
-    background-color: #8125b3;
-    border-radius: 0.1rem;
-}
-.tituloAutor{
-    text-align: center;
-}
-/*----fin bibliografia----*/
+/*----fin presentación----*/
 /*FIN MAIN*/
 
-/*FOOTER*/
-footer div{
-    background-color:#888;
-    color: white;
-    text-align: center;
-}
-/*FIN FOOTER*/
 
 /*RESPONSIVE PC*/
 @media screen and (min-width:768px){
