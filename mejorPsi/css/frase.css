@@ -1,0 +1,24 @@
+.frase{
+    background-color: lightseagreen;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2rem;
+}
+.frase i{
+    font-size: 3rem;
+    color: white;
+}
+.frase p{
+    font-size: 1rem;
+    color:white;
+    font-style: italic;
+}
+.frase h3{
+    color: black;
+    background-color: violet;
+    padding: 1rem;
+    border-radius: 1rem;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/servicios.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+    <link rel="stylesheet" href="./css/frase.css">
+    <title>Astronomía General</title>
+  </head>
+  <body>
+    <header>
+      <span class="navBar" id="btnMenu"><i class="fas fa-bars"></i> </span>
+      <nav class="nav">
+        <ul class="navMenu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Cursos</a></li>
+          <li><a href="#">Contactanos</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="presentacion">
+        <img src="./img/logoMejorPsi.png" alt="logo Mejor.psi">
+        <h1>Mejor.psi</h1>
+        <h2>Tu psicólogo(a) de confianza</h2>
+      </section>
+      <section class="frase">
+        <i class="fas fa-quote-right"></i>
+        <p>"Digan lo que digan, los pelos del culo abrigan. probando, probando mi amor por ti"</p>
+        <h3>Paulo Coelho</h3>
+      </section>
+      <section class="servicios">
+        <h2>Nuestros servicios</h2>
+        <div class="contenedorServicios">
+        </div>
+      </section>
+      <section class="contacto">
+        <h3>¿Querés más información?</h3>
+        <h4>Contactános</h4>
+        <form action="mails.php" method="POST">
+          <input
+            name="nombreApellido"
+            type="text"
+            placeholder="Nombre y apellido"
+            required="required"
+          />
+          <input
+            name="mail"
+            type="email"
+            required="required"
+            placeholder="Correo electrónico"
+          />
+          <input name="telefono" type="tel" placeholder="Teléfono" />
+          <textarea
+            name="mensaje"
+            required="required"
+            placeholder="Mensaje"
+          ></textarea>
+          <button name="enviar" type="submit" class="submit">Enviar</button>
+        </form>
+      </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Esto es un footer</p>
+        </div>
+    </footer>
+    <script src="./scripts/menu.js"></script>
+    <script src="./scripts/servicios.js"></script>
+    <script src="./scripts/generadorServicios.js"></script>
+  </body>
+</html>
