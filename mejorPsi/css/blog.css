@@ -1,0 +1,40 @@
+h1{
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem auto;
+}
+.contenedorEntradas{
+    display: flex;
+}
+.entrada{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-top: 2rem;
+}
+.entrada h2{
+    font-size: 2em;
+    margin-bottom: 1.3rem;
+}
+.entrada img{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.entrada p{
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 0.5rem;
+}
+.entrada a{
+    font-size: 1.5rem;
+    color: red;
+}
+.masEntradas{
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem auto;
+}
+.oculto{
+    visibility: hidden;
+}
