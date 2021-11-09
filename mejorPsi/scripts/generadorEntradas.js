@@ -5,12 +5,14 @@ const cantEntradas = entradas.length;
 const renderizarEntradas = () => {
   for (let i = 0; i < 3; i++) {
     const cardHTML =
-       `<article class="entrada">
-              <h2>${entradas[i].titulo}</h2>
-              <img src="./img/${entradas[i].imagen}" alt="${entradas[i].altImagen}">
-              <p>${entradas[i].texto}</p>  
-              <a href="">Ver más...</a>  
-          </article>`;
+       `<div class="separador"></div>
+        <article class="entrada">
+          <h2>${entradas[i].titulo}</h2>
+          <h4>Escrito por: <a id="autor" href="">${entradas[i].autor}</a></h4>
+          <img src="./img/${entradas[i].imagen}" alt="${entradas[i].altImagen}">
+          <p>${entradas[i].texto}</p>    
+          <a href="">Continuar leyendo...</a>
+        </article>`;
     entrada.innerHTML += cardHTML; 
   }
 };
