@@ -1,41 +1,71 @@
 const entrada = document.querySelector(".contenedorEntradas");
 const verMas = document.querySelector(".verMas");
-const cantEntradas = entradas.length;
 
 const renderizarEntradas = () => {
   for (let i = 0; i < 3; i++) {
-    const cardHTML =
-       `<div class="separador"></div>
+    const cardHTML = `<div class="separador"></div>
         <article class="entrada">
           <h2>${entradas[i].titulo}</h2>
           <h4>Escrito por: <a id="autor" href="">${entradas[i].autor}</a></h4>
           <img src="./img/${entradas[i].imagen}" alt="${entradas[i].altImagen}">
-          <p>${entradas[i].texto}</p>    
-          <a href="">Continuar leyendo...</a>
+          <p class="introEntrada">${entradas[i].intro}</p>
+          <p class="textoEntrada oculto">${entradas[i].texto}</p>     
+          <p class="continuar">Continuar leyendo...</p>
         </article>`;
-    entrada.innerHTML += cardHTML; 
+    entrada.innerHTML += cardHTML;
   }
 };
 renderizarEntradas();
 
+
 let entradasVisibles = document.querySelectorAll(".entrada");
-let cantEntradasVisibles = entradasVisibles.length;
 
 const cargarMas = () => {
-  if(cantEntradas > cantEntradasVisibles){
-    const cardHTML =
-       `<article class="entrada">
-              <h2>${entradas[cantEntradasVisibles].titulo}</h2>
-              <img src="./img/${entradas[cantEntradasVisibles].imagen}" alt="${entradas[cantEntradasVisibles].altImagen}">
-              <p>${entradas[cantEntradasVisibles].texto}</p>  
-              <a href="">Ver más...</a>  
-          </article>`;
-    entrada.innerHTML += cardHTML; 
+  if (entradas.length > entradasVisibles.length) {
+    const cardHTML = `<div class="separador"></div>
+    <article class="entrada">
+      <h2>${entradas[entradasVisibles.length].titulo}</h2>
+      <h4>Escrito por: <a id="autor" href="">${entradas[entradasVisibles.length].autor}</a></h4>
+      <img src="./img/${entradas[entradasVisibles.length].imagen}" alt="${entradas[entradasVisibles.length].altImagen}">
+      <p class="introEntrada">${entradas[entradasVisibles.length].intro}</p>
+      <p class="textoEntrada oculto">${entradas[entradasVisibles.length].texto}</p>    
+      <p class="continuar">Continuar leyendo...</p>
+    </article>`;
+    entrada.innerHTML += cardHTML;
     entradasVisibles = document.querySelectorAll(".entrada");
-    cantEntradasVisibles = entradasVisibles.length;
-  }else{
+    continuarLeyendo = document.querySelectorAll(".continuar");
+    textoEntrada = document.querySelectorAll(".textoEntrada");
+
+    for (let i = 0; i < continuarLeyendo.length; i++){
+      continuarLeyendo[i].addEventListener("click", () => {
+        if(continuarLeyendo[i].innerHTML == "Continuar leyendo..."){
+          textoEntrada[i].classList.remove("oculto");
+          continuarLeyendo[i].innerHTML = "Ver menos"
+        }else{
+          textoEntrada[i].classList.add("oculto");
+          continuarLeyendo[i].innerHTML = "Continuar leyendo..."
+        }  
+      });
+    };
+
+  } else {
     verMas.classList.add("oculto");
   }
 };
 
-verMas.addEventListener('click',cargarMas);
+verMas.addEventListener("click", cargarMas);
+
+let continuarLeyendo = document.querySelectorAll(".continuar");
+let textoEntrada = document.querySelectorAll(".textoEntrada");
+
+for (let i = 0; i < continuarLeyendo.length; i++){
+  continuarLeyendo[i].addEventListener("click", () => {
+    if(continuarLeyendo[i].innerHTML == "Continuar leyendo..."){
+      textoEntrada[i].classList.remove("oculto");
+      continuarLeyendo[i].innerHTML = "Ver menos"
+    }else{
+      textoEntrada[i].classList.add("oculto");
+      continuarLeyendo[i].innerHTML = "Continuar leyendo..."
+    }  
+  });
+};

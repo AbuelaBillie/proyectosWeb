@@ -23,12 +23,14 @@ h1{
     align-items: center;
     border-radius: 0.7rem;
 }
-.entrada p{
+.textoEntrada{
     font-family: 'Inter', sans-serif;
-    margin-bottom: 0.5rem;
 }
-.entrada a{
-    font-size: 1.7rem;
+.introEntrada{
+    font-family: 'Inter', sans-serif;
+}
+.continuar{
+    font-size: 1.3rem;
     color: rgb(60, 6, 255);
     margin-bottom: 1.5rem;
 }
@@ -46,6 +48,7 @@ h1{
 }
 .oculto{
     visibility: hidden;
+    display: none;
 }
 .separador{
     width: 100%;

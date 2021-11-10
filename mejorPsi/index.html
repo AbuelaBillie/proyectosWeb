@@ -12,11 +12,12 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/servicios.css">
-    <link rel="stylesheet" href="./css/contacto.css">
-    <link rel="stylesheet" href="./css/frase.css">
-    <link rel="stylesheet" href="./css/metodologia.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/servicios.css" />
+    <link rel="stylesheet" href="./css/contacto.css" />
+    <link rel="stylesheet" href="./css/frase.css" />
+    <link rel="stylesheet" href="./css/equipo.css" />
+    <link rel="stylesheet" href="./css/metodologia.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <title>Mejor.psi</title>
   </head>
   <body>
@@ -35,25 +36,75 @@
     </header>
     <main>
       <section class="presentacion">
-        <img src="./img/logoMejorPsi.png" alt="logo Mejor.psi">
+        <img src="./img/logoMejorPsi.png" alt="logo Mejor.psi" />
         <h1>mejor.psi</h1>
         <h2>Tu psicólogo(a) de confianza</h2>
       </section>
       <section class="frase">
         <i class="fas fa-quote-right"></i>
-        <p>"Digan lo que digan, los pelos del culo abrigan. probando, probando mi amor por ti"</p>
+        <p>
+          "Digan lo que digan, los pelos del culo abrigan. probando, probando mi
+          amor por ti"
+        </p>
         <h3>Paulo Coelho</h3>
+      </section>
+      <section class="equipo">
+        <h2>El equipo</h2>
+        <p>
+          El equipo noseque amet consectetur adipisicing elit. Cupiditate magnam
+          sequi nobis, quaerat neque quidem consequatur? Illo dicta, aliquid
+          magnam illum consequatur rem excepturi error eaque alias. Voluptatum,
+          possimus provident.
+        </p>
+        <div class="contenedorEspecialistas">
+          <ul class="slider">
+            <li id="slide1">
+              <div class="especialista">
+                <img src="./img/integrante1.jpg" alt="lisa" />
+                <h3>Giuliana Mastellone</h3>
+                <p class="corriente">
+                  Corriente psicológica <span>Psicoanalista</span>
+                </p>
+              </div>
+            </li>
+            <li id="slide2">
+              <div class="especialista">
+                <img src="./img/integrante1.jpg" alt="lisa" />
+                <h3>La amiga de mi prima</h3>
+                <p class="corriente">
+                  Corriente psicológica <span>Psicoanalista</span>
+                </p>
+              </div>
+            </li>
+            <li id="slide3">
+              <div class="especialista">
+                <img src="./img/integrante1.jpg" alt="lisa" />
+                <h3>La otra amiga de mi prima</h3>
+                <p class="corriente">
+                  Corriente psicológica <span>Psicoanalista</span>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <ul class="botoneraSlider">
+          <li><a href="#slide1"><i id="iconVacio1" class="far fa-circle oculto"></i><i id="iconLleno1" class="fas fa-circle"></i></a></li>
+          <li><a href="#slide2"><i id="iconVacio2" class="far fa-circle"></i><i id="iconLleno2" class="fas fa-circle oculto"></i></a></li>
+          <li><a href="#slide3"><i id="iconVacio3" class="far fa-circle"></i><i id="iconLleno3" class="fas fa-circle oculto"></i></a></li>
+        </ul>
       </section>
       <section class="metodologia">
         <h2>Sobre la terapia</h2>
         <p>
-          Nuestra metodología tatata Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam sequi nobis, quaerat neque quidem consequatur? Illo dicta, aliquid magnam illum consequatur rem excepturi error eaque alias. Voluptatum, possimus provident.
+          Nuestra metodología tatata Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Cupiditate magnam sequi nobis, quaerat neque quidem
+          consequatur? Illo dicta, aliquid magnam illum consequatur rem
+          excepturi error eaque alias. Voluptatum, possimus provident.
         </p>
       </section>
       <section class="servicios">
         <h2>Nuestros servicios</h2>
-        <div class="contenedorServicios">
-        </div>
+        <div class="contenedorServicios"></div>
       </section>
       <section class="contacto">
         <h3>¿Querés más información?</h3>
@@ -82,22 +133,32 @@
       </section>
     </main>
     <footer>
-        <div class="redes">
-            <ul>
-              <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-              <li><a href=""><i class="fab fa-instagram"></i></a></li>
-              <li><a href=""><i class="fab fa-facebook"></i></a></li>
-              <li><a href=""><i class="far fa-envelope"></i></a></li>
-            </ul>
-            <p>Seguinos en nuestras redes!</p>
-        </div>
-        <div class="credito">
-          <p>PAGINA WEB POR /ABUELABILLIE</p>
-          <a href=""><i class="fab fa-github"></i></a>
-        </div>
+      <div class="redes">
+        <ul>
+          <li>
+            <a href=""><i class="fab fa-whatsapp"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="far fa-envelope"></i></a>
+          </li>
+        </ul>
+        <p>Seguinos en nuestras redes!</p>
+      </div>
+      <div class="credito">
+        <p>PAGINA WEB POR /ABUELABILLIE</p>
+        <a href=""><i class="fab fa-github"></i></a>
+      </div>
     </footer>
     <script src="./scripts/menu.js"></script>
     <script src="./scripts/servicios.js"></script>
     <script src="./scripts/generadorServicios.js"></script>
+    <script src="./scripts/integrantes.js"></script>
+    <script src="./scripts/sliderEquipo.js"></script>
   </body>
 </html>
