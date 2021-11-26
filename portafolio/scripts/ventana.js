@@ -1,4 +1,4 @@
-///////////////////DRAGGEO DE VENTANAS////////////////////////
+//////////////////////DRAGGEO DE VENTANAS////////////////////////
 const ventana = document.querySelectorAll(".ventanaActiva");
 
 for (let i = 0; i < ventana.length; i++) {
@@ -34,4 +34,14 @@ for (let i = 0; i < ventana.length; i++) {
 }
 /////////////////////////////////////////////////////////////////
 
+/////////////////////BOTÓN CERRAR VENTANAS///////////////////////
+const btnCerrar = document.querySelectorAll("#cerrarVentana");
 
+for (let i = 0; i < btnCerrar.length; i++) {
+  btnCerrar[i].addEventListener("click", () => {
+    const ventanaAbierta = btnCerrar[i].parentNode.parentNode;
+    ventanaAbierta.classList.add("oculto");
+    ventanaAbierta.classList.remove("ventanaActiva");
+  });
+}
+/////////////////////////////////////////////////////////////////
