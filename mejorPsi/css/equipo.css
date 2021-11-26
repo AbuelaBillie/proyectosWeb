@@ -31,7 +31,7 @@
     margin-bottom: 1rem;
 }
 .equipo h3{
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -39,10 +39,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 .corriente span{
-    font-size: 1.7rem;
+    font-size: 2rem;
 }
 .contenedorEspecialistas{
     width: 100%;
@@ -69,13 +69,14 @@
 
 .botoneraSlider{
     display: flex;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 .botoneraSlider li{
-    padding: 0.3rem;
+    padding: 0.5rem;
 }
 .botoneraSlider li a{
     color: violet;
+    font-size: 1.5rem;
 }
 .oculto{
     visibility: hidden;

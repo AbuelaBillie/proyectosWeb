@@ -6,6 +6,8 @@ const iL1 = document.querySelector("#iconLleno1");
 const iL2 = document.querySelector("#iconLleno2");
 const iL3 = document.querySelector("#iconLleno3");
 
+iL1.click();
+
 iV1.addEventListener("click", () => {
     iV1.classList.add("oculto");
     iL1.classList.remove("oculto");
