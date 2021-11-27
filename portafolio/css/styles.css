@@ -1,16 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
 * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   font-family: "IBM Plex Mono", monospace;
 }
 html {
   background-color: #017d7d;
   height: 100%;
+  overflow: hidden;
 }
 body {
   margin: 0;
   height: 100%;
   display: flex;
   flex-direction: column;
+}
+h1{
+  margin: 1rem auto;
 }
 .ventanaActiva {
   background-color: lightgray;
@@ -25,7 +32,7 @@ body {
   top: 5rem;
 }
 #ventMisDatos {
-  width: 50rem;
+  width: 45rem;
   height: 40rem;
   left: 50rem;
   top: 5rem;
@@ -34,7 +41,7 @@ body {
 .contenedorMisDatos {
   display: flex;
   padding: 2rem;
-  margin-right: 3rem;
+  margin-right: 1rem;
   flex-wrap: wrap;
   height: 40%;
 }
@@ -42,7 +49,16 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 1rem;
+  padding: 0.5rem;
+  margin: 0.3rem;
+  width: 5rem;
+  height: 5rem;
+}
+.contenedorMisDatos div:hover{
+    border-style: solid;
+    border-color: lightskyblue;
+    border-width: 0.1rem;
+    background-color: rgba(28, 179, 213, .3);
 }
 .contenedorMisDatos div img {
   width: 3rem;
@@ -53,6 +69,9 @@ body {
   background-size: 100%;
   width: 15rem;
   padding: 2rem;
+}
+.tituloVentana p{
+  margin-top: 1rem;
 }
 .separadorColorido {
   width: 13rem;
@@ -99,11 +118,11 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   width: 50%;
-  margin: 4rem;
+  margin: 3.5rem;
 }
 .contenidoVent div {
   width: 60%;
-  padding: 2rem;
+  padding: 2rem 2rem 2rem .5rem;
 }
 .contenidoMisDatos {
   height: 100%;
@@ -124,8 +143,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 7rem;
-  margin-bottom: 1rem;
+  width: 9rem;
+  margin-bottom: .5rem;
+  margin-top: .5rem;
 }
 .iconoEscritorio:hover {
   border-style: solid;
@@ -139,6 +159,7 @@ body {
 }
 footer {
   margin-top: auto;
+  z-index: 999;
 }
 nav {
   background-color: #c0c0c0;
@@ -156,4 +177,7 @@ nav {
 }
 .oculto {
   display: none;
+}
+#cerrarVentana:hover{
+  color: #00007b;
 }

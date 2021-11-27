@@ -34,6 +34,8 @@ for (let i = 0; i < ventana.length; i++) {
 }
 /////////////////////////////////////////////////////////////////
 
+
+
 /////////////////////BOTÓN CERRAR VENTANAS///////////////////////
 const btnCerrar = document.querySelectorAll("#cerrarVentana");
 
@@ -44,4 +46,17 @@ for (let i = 0; i < btnCerrar.length; i++) {
     ventanaAbierta.classList.remove("ventanaActiva");
   });
 }
+/////////////////////////////////////////////////////////////////
+
+
+
+//////////////////////////BOTÓN MIS_DATOS////////////////////////
+const btnMisDatos = document.querySelector(".btnMisDatos");
+
+btnMisDatos.addEventListener("click", () => {
+  const ventMisDatos = document.querySelector("#ventMisDatos");
+
+  ventMisDatos.classList.add("ventanaActiva");
+  ventMisDatos.classList.remove("oculto");
+})
 /////////////////////////////////////////////////////////////////
