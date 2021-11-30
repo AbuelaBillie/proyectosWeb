@@ -47,7 +47,7 @@ transition: .7s ease;
     font-family: 'Roboto', sans-serif;
 }
 .adelante{
-    background-image: url('img/iconMejorPsi.png');
+    background-image: url('../img/iconMejorPsi.png');
     background-size: 50%;
     background-repeat: no-repeat;
     background-position-x: 50%;
