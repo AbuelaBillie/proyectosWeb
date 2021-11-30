@@ -1,38 +1,62 @@
-.servicios{
-    margin: 3rem auto;
-}
 .servicios h2{
     font-size: 2rem;
+    margin-top: 3rem;
 }
-.contenedorServicios{
+.wrap{
     width: 70%;
-    margin: 0 auto;
-}
-.servicio{
+    margin: 1rem auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+.tarjeta-wrap{
+    -webkit-perspective: 900;
+    perspective: 900;
+}
+.tarjeta{
+padding: 1rem;
+margin: 1rem;
+text-align: center;
+width: 13rem;
+height: 13rem;
+border-radius: 0.3rem;
+background: pink;
+position: relative;
+transform-style: preserve-3d;
+transition: .7s ease;
+}
+.adelante, .atras{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     padding: 1rem;
-    margin: 1rem;
-    border-radius: 0.3rem;
-    background-color: pink;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
-.servicio img{
-    width: 50%;
+
+.atras{
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.nombreServicio{
+.atras p{
+    font-family: 'Roboto', sans-serif;
+}
+.adelante{
+    background-image: url(/img/iconMejorPsi.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 25%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     font-size: 1.5rem;
 }
-.comentarioServicio{
-    position: absolute;
-    visibility: hidden;
-}
-.comentarioServicio p{
-    font-family: 'Roboto', sans-serif;
-    text-align: justify;
-    margin-top: 1rem;
-}
-.servicio:hover .comentarioServicio{
-    position: relative;
-    visibility: visible;
+.tarjeta-wrap:hover .tarjeta{
+    transform: rotateY(180deg);
 }

@@ -23,4 +23,19 @@ window.addEventListener("load", function () {
       }
     });
   }
+
+  const irAlCielo = document.querySelector(".irAlCielo");
+
+  function llegoScroll() {
+    let scrollTop = document.documentElement.scrollTop;
+    let alturaContenedor = irAlCielo.offsetTop;
+    if (alturaContenedor + 300 < scrollTop) {
+      irAlCielo.classList.remove("oculto");
+    }
+    if (alturaContenedor - 300 > scrollTop) {
+      irAlCielo.classList.add("oculto");
+    }
+  }
+
+  window.addEventListener("scroll", llegoScroll);
 });
