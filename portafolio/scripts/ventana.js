@@ -60,3 +60,25 @@ btnMisDatos.addEventListener("click", () => {
   ventMisDatos.classList.remove("oculto");
 })
 /////////////////////////////////////////////////////////////////
+
+////////////////////////BOTÓN CONOCIMIENTOS//////////////////////
+const btnConocimientos = document.querySelector(".btnConocimientos");
+
+btnConocimientos.addEventListener("click", () => {
+  const ventConocimientos = document.querySelector("#ventConocimientos");
+
+  ventConocimientos.classList.add("ventanaActiva");
+  ventConocimientos.classList.remove("oculto");
+})
+/////////////////////////////////////////////////////////////////
+
+//////////////////////////BOTÓN PROYECTOS////////////////////////
+const btnProyectos = document.querySelector(".btnProyectos");
+
+btnProyectos.addEventListener("click", () => {
+  const ventProyectos = document.querySelector("#ventProyectos");
+
+  ventProyectos.classList.add("ventanaActiva");
+  ventProyectos.classList.remove("oculto");
+})
+/////////////////////////////////////////////////////////////////
