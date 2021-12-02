@@ -21,8 +21,9 @@ text-align: center;
 width: 13rem;
 height: 13rem;
 border-radius: 0.3rem;
-background: pink;
 position: relative;
+background-color: pink;
+background:  linear-gradient(to top, rgb(224, 170, 250),#edbdfc);
 transform-style: preserve-3d;
 transition: .7s ease;
 }
@@ -56,7 +57,18 @@ transition: .7s ease;
     align-items: flex-end;
     justify-content: center;
     font-size: 1.5rem;
+    color: #222;
 }
 .tarjeta-wrap:hover .tarjeta{
     transform: rotateY(180deg);
 }
+
+/*RESPONSIVE PC*/
+@media screen and (min-width: 768px) {
+    .wrap{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/*FIN RESPONSIVE PC*/

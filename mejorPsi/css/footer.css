@@ -1,10 +1,11 @@
 /*FOOTER*/
 .redes{
     height: 13rem;
-    background-color: #E3CBBB;
+    background-color: #99cccc;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 2rem;
 }
 .redes ul{
@@ -14,17 +15,22 @@
     margin-bottom: 1rem;
 }
 .redes ul li{
-    font-size: 1.5rem;
     width: 3rem;
     height: 3rem;
-    text-align: center;
-    padding: 0.6rem;
-    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
     background-color: #222;
     margin: 0.3rem;
+    font-size: 1.5rem;
 }
 .redes ul li a{
     color: white;
+    padding: 0.6rem;
+}
+.redes ul li:hover{
+    background-color: #333;
 }
 .redes p{
     font-size: 1.8rem;
@@ -33,7 +39,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: gray;
+    background-color: #222;
 }
 .credito p{
     font-size: 0.8rem;

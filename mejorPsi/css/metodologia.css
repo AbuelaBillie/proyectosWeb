@@ -1,15 +1,28 @@
-.metodologia{
-    display: flex;
-    width: 80%;
-    margin:0 auto;
+.metodologia {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
 }
-.metodologia h2{
-    font-size: 2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
+.metodologia h2 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
-.metodologia p{
-    font-family: 'Inter', sans-serif;
-    text-align: justify;
-    margin-top: 1rem;
+.metodologia p {
+  font-family: "Inter", sans-serif;
+  text-align: justify;
+  margin-top: 1rem;
 }
+
+/*RESPONSIVE PC*/
+@media screen and (min-width: 768px) {
+  .metodologia {
+    width: 60%;
+  }
+  .metodologia p {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+}
+/*FIN RESPONSIVE PC*/

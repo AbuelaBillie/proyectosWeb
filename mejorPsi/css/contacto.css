@@ -1,55 +1,63 @@
 .contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:#B096CD;
-    margin: 5rem auto 0 auto;
-    padding-top: 2.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #74c2c2;
+  margin: 5rem auto 0 auto;
+  padding-top: 2.3rem;
+}
+.contacto h3 {
+  font-size: 2rem;
+}
+.contacto h4 {
+  font-size: 1.8rem;
+  color: white;
+}
+.contacto form {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.contacto form input {
+  margin: 0.5rem;
+  font-size: 1rem;
+  height: 2.5rem;
+  padding-left: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+}
+.contacto form textarea {
+  resize: none;
+  margin: 0.5rem;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+  height: 10rem;
+  border: none;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+}
+button {
+  width: 8rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  margin: 0.5rem;
+  color: white;
+  background-color: #222;
+  border: none;
+}
+button:hover {
+  background-color: #353535;
+}
+
+/*RESPONSIVE PC*/
+@media screen and (min-width: 768px) {
+  .contacto form{
+    width: 37%;
   }
-  .contacto h3{
-    font-size: 2rem;
-  }
-  .contacto h4 {
-    font-size: 1.8rem;
-    color: white;
-  }
-  .contacto form {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-  }
-  .contacto form input {
-    margin: 0.5rem;
-    font-size: 1rem;
-    height: 2.5rem;
-    padding-left: 0.5rem;
-    border: none;
-    border-radius: 5px;
-    font-family: 'Roboto', sans-serif;
-  }
-  .contacto form textarea {
-    resize: none;
-    margin: 0.5rem;
-    font-size: 1rem;
-    padding-left: 0.5rem;
-    padding-top: 0.5rem;
-    height: 10rem;
-    border: none;
-    border-radius: 5px;
-    font-family: 'Roboto', sans-serif;
-  }
-  button {
-    width: 8rem;
-    height: 3rem;
-    font-size: 1.5rem;
-    border-radius: 5px;
-    margin: 0.5rem;
-    color: white;
-    background-color: #222;
-    border: none;
-  }
-  button:hover {
-    background-color: #353535;
-  }
+}
+/*FIN RESPONSIVE PC*/
