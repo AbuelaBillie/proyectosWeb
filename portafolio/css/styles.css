@@ -17,11 +17,14 @@ body {
   display: flex;
   flex-direction: column;
 }
+ul {
+  list-style: none;
+}
 .no-seleccionable {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; 
+  user-select: none;
 }
 
 /* FIN GENERAL */
@@ -62,7 +65,7 @@ h1 {
   position: absolute;
   display: flex;
   flex-direction: column;
-  box-shadow: .3rem .3rem 1rem .2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0.3rem 0.3rem 1rem 0.2rem rgba(0, 0, 0, 0.2);
 }
 .tituloVentana {
   background-image: url("../img/nubesVentana.png");
@@ -100,7 +103,7 @@ h1 {
   background-color: #0094ff;
 }
 .barraSuperiorVent {
-  background-color: blue;
+  background-color: #00007b;
   background: linear-gradient(to right, #00007b, #0884ce);
   height: 2rem;
   display: flex;
@@ -109,9 +112,6 @@ h1 {
   padding: 0 1rem;
   color: white;
   font-weight: bold;
-}
-.oculto {
-  display: none;
 }
 #cerrarVentana:hover {
   color: #00007b;
@@ -212,12 +212,49 @@ h1 {
   top: 3rem;
   background-color: white;
 }
-.contVentProy{
+.contVentProy {
   width: 50%;
 }
 /* FIN VENTANA PROYECTOS */
 
 /* BARRA DE NAVEGACION INFERIOR */
+.inicio {
+  width: 18rem;
+  height: 37.29rem;
+  background-color: #c0c0c0;
+  left: 5rem;
+  display: flex;
+}
+.barraLateral {
+  background-color: #00007b;
+  background: linear-gradient(to bottom, #00007b, #0884ce);
+  width: 2rem;
+  height: 37.29rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.barraLateral p{
+  color: white;
+  transform: rotate(270deg);
+  margin-bottom: 4rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.listadoProgramas ul li{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: .5rem;
+  width: 16rem;
+}
+.listadoProgramas ul li p{
+  margin-left: 1rem;
+}
+.listadoProgramas ul li:hover{
+  background-color: #00007b;
+  color: white;
+}
 footer {
   margin-top: auto;
   z-index: 999;
@@ -232,8 +269,15 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 2rem;
-  width: 5rem;
-  margin-left: 1rem;
+  height: 2.3rem;
+  width: 7rem;
+  margin-left: .1rem;
 }
 /* FIN BARRA DE NAVEGACION INFERIOR */
+
+.oculto {
+  display: none;
+}
+.inicioSeleccionado{
+  background-color: gray;
+}

@@ -35,7 +35,6 @@ for (let i = 0; i < ventana.length; i++) {
 /////////////////////////////////////////////////////////////////
 
 
-
 /////////////////////BOTÓN CERRAR VENTANAS///////////////////////
 const btnCerrar = document.querySelectorAll("#cerrarVentana");
 
@@ -49,7 +48,6 @@ for (let i = 0; i < btnCerrar.length; i++) {
 /////////////////////////////////////////////////////////////////
 
 
-
 //////////////////////////BOTÓN MIS_DATOS////////////////////////
 const btnMisDatos = document.querySelector(".btnMisDatos");
 
@@ -60,6 +58,7 @@ btnMisDatos.addEventListener("click", () => {
   ventMisDatos.classList.remove("oculto");
 })
 /////////////////////////////////////////////////////////////////
+
 
 ////////////////////////BOTÓN CONOCIMIENTOS//////////////////////
 const btnConocimientos = document.querySelector(".btnConocimientos");
@@ -72,6 +71,7 @@ btnConocimientos.addEventListener("click", () => {
 })
 /////////////////////////////////////////////////////////////////
 
+
 //////////////////////////BOTÓN PROYECTOS////////////////////////
 const btnProyectos = document.querySelector(".btnProyectos");
 
@@ -80,5 +80,29 @@ btnProyectos.addEventListener("click", () => {
 
   ventProyectos.classList.add("ventanaActiva");
   ventProyectos.classList.remove("oculto");
+})
+/////////////////////////////////////////////////////////////////
+
+
+///////////////////////////BOTÓN INICIO//////////////////////////
+const btnInicio = document.querySelector(".botonInicio");
+
+btnInicio.addEventListener("click", () => {
+  const ventInicio = document.querySelector(".inicio");
+
+  ventInicio.classList.toggle("oculto");
+  btnInicio.classList.toggle("inicioSeleccionado");
+})
+/////////////////////////////////////////////////////////////////
+
+
+///////////////////////////BOTÓN SALUDOS/////////////////////////
+const btnSaludos = document.querySelector(".btnSaludos");
+
+btnSaludos.addEventListener("click", () => {
+  const ventSaludos = document.querySelector("#ventSaludos");
+
+  ventSaludos.classList.add("ventanaActiva");
+  ventSaludos.classList.remove("oculto");
 })
 /////////////////////////////////////////////////////////////////
