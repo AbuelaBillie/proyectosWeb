@@ -30,8 +30,6 @@ window.addEventListener("load", function () {
     const iconMute = document.querySelector(".mute");
     const iconDesmute = document.querySelector(".desmute");
 
-    cancionMenu.play();
-
     btnAudio.addEventListener("click", () => {
         btnAudio.classList.toggle("soundTrue");
         if(btnAudio.classList == "btnAudio soundTrue"){
