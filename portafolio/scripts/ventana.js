@@ -106,3 +106,18 @@ btnSaludos.addEventListener("click", () => {
   ventSaludos.classList.remove("oculto");
 })
 /////////////////////////////////////////////////////////////////
+
+
+////////////////////////VENTANAS AL FRENTE///////////////////////
+let indexVentana = 0;
+for (let i = 0; i < ventana.length; i++) {
+  ventana[i].addEventListener("click", () =>{
+  indexVentana ++;
+  ventana[i].style.zIndex = indexVentana;
+  });
+}
+/////////////////////////////////////////////////////////////////
+
+
+
+
