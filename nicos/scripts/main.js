@@ -16,10 +16,18 @@ window.addEventListener("load", function () {
             iconBtn[4].classList.add("oculto");
             iconBtn[i].classList.remove("oculto");
             posicionBtnNav = i;
-            document.getElementById('audioSeleccionMenu').play();
+            if(btnNavegacion[i].classList == "btnNavegacion"){
+                document.getElementById('audioSeleccionMenu').play();
+            }
         });
         btnNavegacion[i].addEventListener("mouseout", () =>{
             iconBtn[i].classList.add("oculto");
+            btnNavegacion[0].classList.remove("selected");
+            btnNavegacion[1].classList.remove("selected");
+            btnNavegacion[2].classList.remove("selected");
+            btnNavegacion[3].classList.remove("selected");
+            btnNavegacion[4].classList.remove("selected");
+            btnNavegacion[i].classList.add("selected");
         });
     };  
     /////////////////////////////////////////////// 
