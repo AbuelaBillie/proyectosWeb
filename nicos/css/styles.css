@@ -25,8 +25,10 @@ html{
     align-items: center;
     border: solid;
     color: #111;
-    box-shadow: inset 0rem 0rem 2rem black,
-    0rem 0rem 5rem rgb(50, 122, 50);
+    box-shadow: inset 0rem 0rem 2rem black;
+    animation-name: anim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
     padding-top: 5rem;
     padding-bottom: 3.5rem;
     border-radius: 18%;
@@ -37,6 +39,13 @@ html{
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+@keyframes anim{
+    0% {box-shadow: 0rem 0rem 3rem rgb(50, 122, 50);} /*Amarillo*/
+   25% {box-shadow: 0rem 0rem 4rem rgb(244, 248, 0)} /*Naranja*/
+   50% {box-shadow: 0rem 0rem 5rem rgb(50, 122, 50);} /*Negro*/
+   75% {box-shadow: 0rem 0rem 4rem rgb(244, 248, 0)} /*Otra vez naranja*/
+  100% {box-shadow: 0rem 0rem 3rem rgb(50, 122, 50);} /*Otra vez amarillo*/
 }
 .btnAudio{
     background: none;
