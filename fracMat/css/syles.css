@@ -42,7 +42,7 @@ header {
   width: 100px;
   height: 100px;
 }
-.logo h1 {
+.logo h2 {
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 3.5rem;
   color: #e71d36;
@@ -112,7 +112,11 @@ header nav ul li a:hover {
 .contenedorHeroe h2 {
   font-size: 3rem;
 }
-.contenedorHeroe h3 {
+.contenedorHeroe h1 {
+  margin-bottom: 3rem;
+  font-size: 1.3rem;
+}
+.contenedorHeroe h3{
   margin-bottom: 3rem;
 }
 .botonHeroe {
