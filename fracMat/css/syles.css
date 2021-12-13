@@ -74,7 +74,7 @@ header nav ul li a:hover {
 }
 /*MAIN*/
 .heroeIni {
-  background-image: url("../img/heroInicio.jpg");
+  background-image: url("../img/heroInicio.webp");
   background-repeat: no-repeat;
   background-size: cover;
   height: 30rem;
@@ -84,7 +84,7 @@ header nav ul li a:hover {
   padding-left: 10rem;
 }
 .heroeNos {
-  background-image: url("../img/heroNosotros.jpg");
+  background-image: url("../img/heroNosotros.webp");
   background-repeat: no-repeat;
   background-size: cover;
   height: 30rem;
@@ -94,7 +94,7 @@ header nav ul li a:hover {
   padding-left: 10rem;
 }
 .heroeProd {
-  background-image: url("../img/heroProductos.jpg");
+  background-image: url("../img/heroProductos.webp");
   background-repeat: no-repeat;
   background-size: cover;
   height: 30rem;
@@ -413,9 +413,12 @@ footer {
     margin-top: 3rem;
     width: 15rem;
   }
+  .contenedorFooter nav ul li{
+    padding: .5rem;
+  } 
 }
 @media screen and (max-width: 480px) {
-  .logo h1 {
+  .logo h2 {
     font-size: 2.5rem;
   }
   .logo {
@@ -426,16 +429,22 @@ footer {
     height: 50px;
   }
   header nav {
-    top: 50px;
+    top: 85px;
   }
   label {
     width: 0px;
   }
   .heroeIni {
-    align-items: flex-start;
+    align-items: center;
     padding-top: 2rem;
-    padding-left: 2rem;
+    padding-left: 0.9rem;
     height: 25rem;
+  }
+  .heroeIni h2{
+    font-size: 1.8rem;
+  }
+  .heroeIni h1{
+    font-size: 1rem;
   }
   .heroeNos {
     padding-left: 4rem;
@@ -446,14 +455,23 @@ footer {
   .botonHeroe {
     justify-content: center;
   }
+  section{
+    overflow: hidden;
+  }
+  .contacto h2 {
+    font-size: 1.5rem;
+  }
   .contenedorFooter {
     width: 80%;
     display: flex;
     justify-content: center;
   }
   .contenedorFooter div {
-    height: 5rem;
+    height: 7rem;
   }
+  .contenedorFooter nav ul li{
+    padding: .5rem;
+  } 
   .contenedorFooter div:first-child {
     margin-bottom: 3rem;
   }
